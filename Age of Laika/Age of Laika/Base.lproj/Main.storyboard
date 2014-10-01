@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A379b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your age" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ypz-Qd-bfO">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMN-as-Eg7">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Calculate!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ifO-HQ-BZm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTq-TT-fCH">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaikaSpaceDog.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QgZ-xU-r0q">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="279" id="Gnd-ns-eXS"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Gnd-ns-eXS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Gnd-ns-eXS"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dog Years:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuS-Zd-ohM">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NOb-c2-mx6"/>
+                                    <constraint firstAttribute="width" constant="84" id="kYU-uZ-oXT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NOb-c2-mx6"/>
+                                        <exclude reference="kYU-uZ-oXT"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="NOb-c2-mx6"/>
+                                        <include reference="kYU-uZ-oXT"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UMN-as-Eg7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="165" id="1ux-Oc-LgL"/>
+                            <constraint firstItem="UMN-as-Eg7" firstAttribute="top" secondItem="ypz-Qd-bfO" secondAttribute="bottom" constant="23" id="E3l-Xq-30e"/>
+                            <constraint firstItem="ypz-Qd-bfO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="82" id="FON-hu-YxA"/>
+                            <constraint firstItem="ypz-Qd-bfO" firstAttribute="top" secondItem="eTq-TT-fCH" secondAttribute="bottom" constant="31" id="GQj-0q-oqd"/>
+                            <constraint firstItem="ypz-Qd-bfO" firstAttribute="top" secondItem="HuS-Zd-ohM" secondAttribute="bottom" constant="32" id="HQX-cQ-r5N"/>
+                            <constraint firstItem="ypz-Qd-bfO" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="HhR-Ft-Rx6"/>
+                            <constraint firstItem="QgZ-xU-r0q" firstAttribute="top" secondItem="UMN-as-Eg7" secondAttribute="bottom" constant="21" id="LMz-zr-ltr"/>
+                            <constraint firstItem="HuS-Zd-ohM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="88" id="Mzk-gA-BYt"/>
+                            <constraint firstItem="UMN-as-Eg7" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="214" id="UOV-Sl-p6R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eTq-TT-fCH" secondAttribute="trailing" constant="44" id="gw1-ID-Vle"/>
+                            <constraint firstItem="ypz-Qd-bfO" firstAttribute="centerX" secondItem="QgZ-xU-r0q" secondAttribute="centerX" id="hHR-YE-F91"/>
+                            <constraint firstItem="HuS-Zd-ohM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="71" id="jNP-Bd-izR"/>
+                            <constraint firstItem="eTq-TT-fCH" firstAttribute="leading" secondItem="HuS-Zd-ohM" secondAttribute="trailing" constant="8" symbolic="YES" id="rzt-wo-5HJ"/>
+                            <constraint firstItem="QgZ-xU-r0q" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="sOU-zD-gWc"/>
+                            <constraint firstItem="eTq-TT-fCH" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="89" id="uVK-05-XPf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ypz-Qd-bfO"/>
+                                <exclude reference="UMN-as-Eg7"/>
+                                <exclude reference="eTq-TT-fCH"/>
+                                <exclude reference="QgZ-xU-r0q"/>
+                                <exclude reference="HuS-Zd-ohM"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Mzk-gA-BYt"/>
+                                <exclude reference="jNP-Bd-izR"/>
+                                <exclude reference="FON-hu-YxA"/>
+                                <exclude reference="GQj-0q-oqd"/>
+                                <exclude reference="HQX-cQ-r5N"/>
+                                <exclude reference="HhR-Ft-Rx6"/>
+                                <exclude reference="hHR-YE-F91"/>
+                                <exclude reference="gw1-ID-Vle"/>
+                                <exclude reference="rzt-wo-5HJ"/>
+                                <exclude reference="uVK-05-XPf"/>
+                                <exclude reference="LMz-zr-ltr"/>
+                                <exclude reference="sOU-zD-gWc"/>
+                                <exclude reference="1ux-Oc-LgL"/>
+                                <exclude reference="E3l-Xq-30e"/>
+                                <exclude reference="UOV-Sl-p6R"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ypz-Qd-bfO"/>
+                                <include reference="UMN-as-Eg7"/>
+                                <include reference="eTq-TT-fCH"/>
+                                <include reference="QgZ-xU-r0q"/>
+                                <include reference="HuS-Zd-ohM"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Mzk-gA-BYt"/>
+                                <include reference="jNP-Bd-izR"/>
+                                <include reference="FON-hu-YxA"/>
+                                <include reference="GQj-0q-oqd"/>
+                                <include reference="HQX-cQ-r5N"/>
+                                <include reference="HhR-Ft-Rx6"/>
+                                <include reference="hHR-YE-F91"/>
+                                <include reference="gw1-ID-Vle"/>
+                                <include reference="rzt-wo-5HJ"/>
+                                <include reference="uVK-05-XPf"/>
+                                <include reference="LMz-zr-ltr"/>
+                                <include reference="sOU-zD-gWc"/>
+                                <include reference="1ux-Oc-LgL"/>
+                                <include reference="E3l-Xq-30e"/>
+                                <include reference="UOV-Sl-p6R"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="eTq-TT-fCH" id="0kh-IU-9wa"/>
+                        <outlet property="textField" destination="ypz-Qd-bfO" id="wfP-NE-0RI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="354"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaikaSpaceDog.jpg" width="220" height="136"/>
+    </resources>
+</document>
