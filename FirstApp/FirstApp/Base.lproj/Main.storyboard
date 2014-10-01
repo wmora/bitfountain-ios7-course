@@ -22,25 +22,49 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNJ-DN-VJf">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9vD-kO-RzE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="YCi-VY-q7A" secondAttribute="centerY" constant="251.5" id="5k0-W1-354"/>
+                            <constraint firstAttribute="centerX" secondItem="PNJ-DN-VJf" secondAttribute="centerX" id="A4q-i5-q1Y"/>
+                            <constraint firstAttribute="centerY" secondItem="PNJ-DN-VJf" secondAttribute="centerY" constant="201" id="cMJ-aM-0Ds"/>
                             <constraint firstAttribute="centerX" secondItem="YCi-VY-q7A" secondAttribute="centerX" id="iCo-K2-ZWx"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="PNJ-DN-VJf"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="5k0-W1-354"/>
                                 <exclude reference="iCo-K2-ZWx"/>
+                                <exclude reference="A4q-i5-q1Y"/>
+                                <exclude reference="cMJ-aM-0Ds"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="PNJ-DN-VJf"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="5k0-W1-354"/>
                                 <include reference="iCo-K2-ZWx"/>
+                                <include reference="A4q-i5-q1Y"/>
+                                <include reference="cMJ-aM-0Ds"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="YCi-VY-q7A" id="E0Q-X6-Bff"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

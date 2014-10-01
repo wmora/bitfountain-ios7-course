@@ -10,9 +10,13 @@
 
 @interface ViewController ()
 
+@property int timesClicked;
+
 @end
 
 @implementation ViewController
+
+int timesClicked;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,4 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)buttonPressed:(UIButton *)sender {
+    self.titleLabel.text = [NSString stringWithFormat:@"Touch count: %d", ++self.timesClicked];
+}
 @end
