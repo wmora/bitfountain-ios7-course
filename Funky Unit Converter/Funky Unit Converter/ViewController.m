@@ -16,22 +16,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    // This is a comment
-    // This is another comment
     
-    /*
-     
-     Information on this line
-     Additional info here
-     
-     */
-    // I am creating a variable named x that is of type integer. Integers are whole numbers
-    int x;
-    // I am assigning the value of 5 to my variable x
-    x = 5;
-    // My variable named heightOfEverestBaseCamp is being assigned the value 16900.3 since my variable is of type float. Floats are numbers with decimals
+    int x = 5;
+    int y = 20;
+    int z = -2;
+    
+    // operators include: + - * /
+    
+    int additionAnswer = x + y;
+    int multiplicationAnswer = y * z;
+    
     float heightOfEverestBaseCamp = 16900.3;
+    float heightOfEverest = 29029;
+    
+    float distanceToTravel = heightOfEverest - heightOfEverestBaseCamp;
+    distanceToTravel = distanceToTravel - 1000;
 }
 
 - (void)didReceiveMemoryWarning {
