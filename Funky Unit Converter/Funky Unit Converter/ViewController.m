@@ -18,11 +18,13 @@
     [super viewDidLoad];
     
     NSLog(@"Hello, world!");
+    NSLog(@"Hello again");
     
     int x = 5;
     int y = 20;
     int z = -2;
     
+    NSLog(@"The value of x is: %i, the value of y is: %i, and the value of z is: %i", x, y, z);
     // operators include: + - * /
     
     int additionAnswer = x + y;
@@ -33,6 +35,8 @@
     
     float distanceToTravel = heightOfEverest - heightOfEverestBaseCamp;
     distanceToTravel = distanceToTravel - 1000;
+    
+    NSLog(@"%f", distanceToTravel);
 }
 
 - (void)didReceiveMemoryWarning {
