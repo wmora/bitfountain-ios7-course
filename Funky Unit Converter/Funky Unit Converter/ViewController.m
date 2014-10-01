@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSLog(@"Hello, world!");
+    
     int x = 5;
     int y = 20;
     int z = -2;
@@ -36,6 +38,7 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    NSLog(@"didReceiveMemoryWarning is evaluating");
 }
 
 @end
