@@ -29,6 +29,7 @@ int timesClicked;
 }
 
 - (IBAction)buttonPressed:(UIButton *)sender {
-    self.titleLabel.text = [NSString stringWithFormat:@"Touch count: %d", ++self.timesClicked];
+    self.titleLabel.text = self.textField.text;
+    [self.textField resignFirstResponder];
 }
 @end

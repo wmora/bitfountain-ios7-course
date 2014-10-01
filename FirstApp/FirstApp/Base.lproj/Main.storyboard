@@ -16,6 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello, world!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCi-VY-q7A">
+                                <rect key="frame" x="252" y="47" width="96" height="21"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="115" y="37" width="170" height="21"/>
+                                </variation>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNJ-DN-VJf">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Button">
@@ -26,30 +35,31 @@
                                     <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9vD-kO-RzE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello, world!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCi-VY-q7A">
-                                <rect key="frame" x="252" y="47" width="96" height="21"/>
-                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="24"/>
-                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="115" y="37" width="170" height="21"/>
-                                </variation>
-                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter info" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Obp-0x-JCp">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="YCi-VY-q7A" secondAttribute="centerY" constant="251.5" id="5k0-W1-354"/>
                             <constraint firstAttribute="centerX" secondItem="PNJ-DN-VJf" secondAttribute="centerX" id="A4q-i5-q1Y"/>
+                            <constraint firstAttribute="centerX" secondItem="YCi-VY-q7A" secondAttribute="centerX" id="PjK-xH-BmL"/>
+                            <constraint firstAttribute="centerY" secondItem="Obp-0x-JCp" secondAttribute="centerY" constant="148" id="UJB-vY-4Xv"/>
+                            <constraint firstAttribute="centerX" secondItem="Obp-0x-JCp" secondAttribute="centerX" id="ZpU-ie-8uD"/>
                             <constraint firstAttribute="centerY" secondItem="PNJ-DN-VJf" secondAttribute="centerY" constant="201" id="cMJ-aM-0Ds"/>
-                            <constraint firstAttribute="centerX" secondItem="YCi-VY-q7A" secondAttribute="centerX" id="iCo-K2-ZWx"/>
+                            <constraint firstAttribute="centerY" secondItem="YCi-VY-q7A" secondAttribute="centerY" constant="252" id="htg-Yl-UBK"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="PNJ-DN-VJf"/>
+                                <exclude reference="Obp-0x-JCp"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="5k0-W1-354"/>
-                                <exclude reference="iCo-K2-ZWx"/>
+                                <exclude reference="PjK-xH-BmL"/>
+                                <exclude reference="htg-Yl-UBK"/>
+                                <exclude reference="UJB-vY-4Xv"/>
+                                <exclude reference="ZpU-ie-8uD"/>
                                 <exclude reference="A4q-i5-q1Y"/>
                                 <exclude reference="cMJ-aM-0Ds"/>
                             </mask>
@@ -57,16 +67,20 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="PNJ-DN-VJf"/>
+                                <include reference="Obp-0x-JCp"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="5k0-W1-354"/>
-                                <include reference="iCo-K2-ZWx"/>
+                                <include reference="PjK-xH-BmL"/>
+                                <include reference="htg-Yl-UBK"/>
+                                <include reference="UJB-vY-4Xv"/>
+                                <include reference="ZpU-ie-8uD"/>
                                 <include reference="A4q-i5-q1Y"/>
                                 <include reference="cMJ-aM-0Ds"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="textField" destination="Obp-0x-JCp" id="xnX-HI-Kai"/>
                         <outlet property="titleLabel" destination="YCi-VY-q7A" id="E0Q-X6-Bff"/>
                     </connections>
                 </viewController>
