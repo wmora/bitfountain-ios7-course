@@ -25,6 +25,9 @@
 	NSLog(@"My dog is named %@ and its age is %i and its breed is %@", myDog.name, myDog.age, myDog.breed);
 	[myDog bark];
 	[myDog barkANumberOfTimes:24];
+    NSLog(@"%@", myDog.breed);
+    [myDog changeBreedToWerewolf];
+    NSLog(@"%@", myDog.breed);
 }
 
 - (void)didReceiveMemoryWarning {

@@ -20,4 +20,8 @@
     }
 }
 
+- (void)changeBreedToWerewolf {
+    self.breed = @"Werewolf";
+}
+
 @end

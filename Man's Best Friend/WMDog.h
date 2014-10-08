@@ -18,5 +18,6 @@
 
 - (void)bark;
 - (void)barkANumberOfTimes:(int)numberOfTimes;
+- (void)changeBreedToWerewolf;
 
 @end
