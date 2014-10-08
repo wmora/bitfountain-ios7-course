@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WMDog.h"
 
 @interface ViewController ()
 
