@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface WMDog : NSObject
+
+@property (nonatomic) int age;
+@property (nonatomic, strong) NSString *breed;
+@property (nonatomic, strong) UIImage *image;
 
 @end
