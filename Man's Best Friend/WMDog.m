@@ -10,8 +10,14 @@
 
 @implementation WMDog
 
-- (void) bark {
-    NSLog(@"Woof woof!");
+- (void)bark {
+	NSLog(@"Woof woof!");
+}
+
+- (void)barkANumberOfTimes:(int)numberOfTimes {
+    for (int i = 0; i < numberOfTimes; i++) {
+        [self bark];
+    }
 }
 
 @end

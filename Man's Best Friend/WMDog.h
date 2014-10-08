@@ -17,5 +17,6 @@
 @property (nonatomic, strong) NSString *name;
 
 - (void)bark;
+- (void)barkANumberOfTimes:(int)numberOfTimes;
 
 @end
