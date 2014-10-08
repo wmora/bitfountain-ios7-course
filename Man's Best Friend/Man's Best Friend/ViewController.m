@@ -24,7 +24,7 @@
     myDog.age = 1;
     NSLog(@"My dog is named %@ and its age is %i and its breed is %@", myDog.name, myDog.age, myDog.breed);
     myDog = nil;
-    NSLog(@"My dog is named %@ and its age is %i and its breed is %@", myDog.name, myDog.age, myDog.breed);
+    [myDog bark];
 }
 
 - (void)didReceiveMemoryWarning {

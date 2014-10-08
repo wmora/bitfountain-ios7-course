@@ -10,4 +10,8 @@
 
 @implementation WMDog
 
+- (void) bark {
+    NSLog(@"Woof woof!");
+}
+
 @end
