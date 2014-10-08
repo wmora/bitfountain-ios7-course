@@ -19,6 +19,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
 	[self printNumbersUpTo:3];
 	[self printNumbersUpTo:6 from:2];
+	NSLog(@"%i", [self factorial:10]);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,6 +37,13 @@
 	for (int i = limit; i >= base; i--) {
 		NSLog(@"%i", i);
 	}
+}
+
+- (int)factorial:(int)number {
+	if (number == 0 || number == 1) {
+		return 1;
+	}
+	return number * [self factorial:number - 1];
 }
 
 @end
