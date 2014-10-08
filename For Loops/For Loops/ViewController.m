@@ -21,6 +21,12 @@
 	for (int meditationHours = 1; meditationHours <= 100; meditationHours++) {
 		NSLog(@"I am getting more enlightened");
 	}
+    
+    int strandOfWheat = 1;
+    for (int i = 2; i <= 30; i++) {
+        strandOfWheat = strandOfWheat * 2;
+        NSLog(@"%i", strandOfWheat);
+    }
 }
 
 - (void)didReceiveMemoryWarning {
