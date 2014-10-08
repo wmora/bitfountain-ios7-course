@@ -27,7 +27,19 @@
 - (IBAction)calculate:(UIButton *)sender {
     
     int numberInDogYears = [self.textField.text intValue] * 7;
-    self.label.text = [NSString stringWithFormat:@"%i", numberInDogYears];
+    self.yearsLabel.text = [NSString stringWithFormat:@"%i", numberInDogYears];
     
+}
+
+- (IBAction)calculateRealDogYears:(id)sender {
+    int humanYears  = [self.textField.text intValue];
+    int dogYears;
+    if (humanYears > 2) {
+        dogYears = (10.5 * 2) + ((humanYears - 2) * 4);
+    } else {
+        dogYears = 10.5 * humanYears;
+    }
+    
+    self.realYearsLabel.text = [NSString stringWithFormat:@"%i", dogYears];
 }
 @end

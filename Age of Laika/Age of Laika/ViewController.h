@@ -10,10 +10,12 @@
 
 @interface ViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UILabel *label;
+@property (strong, nonatomic) IBOutlet UILabel *yearsLabel;
 @property (strong, nonatomic) IBOutlet UITextField *textField;
+@property (strong, nonatomic) IBOutlet UILabel *realYearsLabel;
 
 - (IBAction)calculate:(UIButton *)sender;
+- (IBAction)calculateRealDogYears:(UIButton *)sender;
 
 @end
 
