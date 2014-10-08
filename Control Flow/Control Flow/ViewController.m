@@ -20,9 +20,14 @@
     
     int truckSpeed = 45;
     int lamboSpeed = 120;
-    int mySpeed = lamboSpeed;
+    int carSpeed = 80;
+    int mySpeed = carSpeed;
+    
+    // < > <= >= != == || &&
     if (mySpeed < 70) {
         NSLog(@"Keep Cruising");
+    } else if (mySpeed > 55 && mySpeed < 90) {
+        NSLog(@"Cruising down highway 66");
     } else {
         NSLog(@"Slow down");
     }
