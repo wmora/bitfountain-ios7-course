@@ -28,11 +28,16 @@
     NSLog(@"%@", myDog.breed);
     [myDog changeBreedToWerewolf];
     NSLog(@"%@", myDog.breed);
+    [self printHelloWorld];
 }
 
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
 	// Dispose of any resources that can be recreated.
+}
+
+- (void)printHelloWorld {
+    NSLog(@"Hello world");
 }
 
 @end
