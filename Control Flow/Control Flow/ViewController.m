@@ -26,6 +26,14 @@
     } else {
         NSLog(@"Slow down");
     }
+    
+    BOOL isTelevisionOn = YES;
+    
+    if (isTelevisionOn) {
+        NSLog(@"We should take a break soon and do some coding");
+    } else {
+        NSLog(@"great job, keep up the hard work");
+    }
 }
 
 - (void)didReceiveMemoryWarning {
