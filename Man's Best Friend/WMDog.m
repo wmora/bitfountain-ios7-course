@@ -36,4 +36,8 @@
     self.breed = @"Werewolf";
 }
 
+- (int)ageInDogYears:(int)regularAge {
+    return regularAge * 7;
+}
+
 @end
