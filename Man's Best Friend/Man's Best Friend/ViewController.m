@@ -19,6 +19,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     WMDog *myDog = [[WMDog alloc] init];
+    myDog.name = @"Nana";
+    myDog.breed = @"St. Bernard";
+    myDog.age = 1;
+    NSLog(@"My dog is named %@ and its age is %i and its breed is %@", myDog.name, myDog.age, myDog.breed);
+    myDog = nil;
+    NSLog(@"My dog is named %@ and its age is %i and its breed is %@", myDog.name, myDog.age, myDog.breed);
 }
 
 - (void)didReceiveMemoryWarning {
