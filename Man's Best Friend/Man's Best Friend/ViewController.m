@@ -23,21 +23,13 @@
 	myDog.breed = @"St. Bernard";
 	myDog.age = 1;
 	NSLog(@"My dog is named %@ and its age is %i and its breed is %@", myDog.name, myDog.age, myDog.breed);
-	[myDog bark];
-	[myDog barkANumberOfTimes:24];
-    NSLog(@"%@", myDog.breed);
-    [myDog changeBreedToWerewolf];
-    NSLog(@"%@", myDog.breed);
-    [self printHelloWorld];
+    [myDog barkANumberOfTimes:1 loudly:YES];
+    [myDog barkANumberOfTimes:1 loudly:NO];
 }
 
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
 	// Dispose of any resources that can be recreated.
-}
-
-- (void)printHelloWorld {
-    NSLog(@"Hello world");
 }
 
 @end
